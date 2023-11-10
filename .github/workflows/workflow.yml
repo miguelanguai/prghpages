@@ -16,10 +16,10 @@ jobs:
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
       env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
+        HOST: ${{ secrets.HOSTMA }}
+        USERNAME: ${{ secrets.USERNAMEMA }}
         PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+        KEY: ${{ secrets.SSHKEYMA }}
       with:
         source: "index.html"
         target: "/var/www/html"
