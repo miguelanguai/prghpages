@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: probando
-      run: echo ${{ secrets.USERNAME }}
+      run: echo ${{ secrets.USERNAMEMA }}
   
   deploy:
     runs-on: ubuntu-latest
