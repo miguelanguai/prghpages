@@ -22,4 +22,4 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "index.html"
-        target: "/home/miguelanguai/"
+        target: "/var/www/html"
