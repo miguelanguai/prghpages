@@ -12,14 +12,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
       env:
-        HOST: ${{ secrets.HOSTMA }}
-        USERNAME: ${{ secrets.USERNAMEMA }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEYMA }}
+        host: ${{ secrets.HOSTMA }}
+        username: ${{ secrets.USERNAMEMA }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEYMA }}
       with:
         source: "index.html"
         target: "/var/www/html"
