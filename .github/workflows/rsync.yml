@@ -13,8 +13,8 @@ jobs:
         uses: up9cloud/action-rsync@master
         env:
           HOST: ${{ secrets.HOST }}
-          USER: ${{ secrets.USER }}
-          KEY: ${{ secrets.KEY }}
+          USER: ${{ secrets.USERNAME }}
+          KEY: ${{ secrets.SSHKEY }}
           TARGET: /home/miguelanguai/dockerApache
           #TARGET es la ruta donde apache instala 
           #Target no es un secreto, ponerlo har-code
