@@ -34,4 +34,4 @@ jobs:
           #     Esta opción le dice a rsync que sólo sincronice los archivos que son más nuevos en el origen que en el destino.
           
           ARGS_MORE: --no-perms --times --update
-          SOURCE: website/
+          SOURCE: ./
