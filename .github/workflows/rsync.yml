@@ -16,6 +16,10 @@ jobs:
           USER: ${{ secrets.USER }}
           KEY: ${{ secrets.KEY }}
           TARGET: ${{ secrets.APACHE_TARGET }}
+          #TARGET es la ruta donde apache instala 
+          #Target no es un secreto, ponerlo har-code
+          #TARGET /var/www/html
+          #no es el mismo target que el del otro yml. Es uno de up9cloud
           
           # 1.  Usa la opción --no-perms de rsync: Esta opción le dice a rsync que no intente preservar los permisos.
           #     Esto puede ser útil si estás copiando archivos entre sistemas con diferentes esquemas de permisos.
