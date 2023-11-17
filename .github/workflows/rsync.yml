@@ -15,7 +15,7 @@ jobs:
           HOST: ${{ secrets.HOST }}
           USER: ${{ secrets.USER }}
           KEY: ${{ secrets.KEY }}
-          TARGET: ${{ secrets.APACHE_TARGET }}
+          TARGET: ${{ /home/miguelanguai/dockerApache }}
           #TARGET es la ruta donde apache instala 
           #Target no es un secreto, ponerlo har-code
           #TARGET /var/www/html
